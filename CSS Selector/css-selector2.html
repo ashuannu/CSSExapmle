@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css selector PC</title>
+	<style>
+		div img{
+			width: 200px;
+			border-radius: 20px;
+			padding: 10px 20px 5px 10px;
+			background-color: green;
+		}
+
+		div > img{
+			width: 400px;
+			border-radius: 20px;
+		}
+
+		div + img{
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>
+			<img src="img\koala.jpg" alt="This image is not displayed">
+		</p>
+		<img src="img\desert.jpg" alt="This image is not displayed">
+	</div>
+	<img src="img\tulips.jpg" alt="This image is not displayed">
+</body>
+</html>
