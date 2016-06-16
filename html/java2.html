@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box shadow create</title>
+	<style type="text/css">
+		div{
+			background-color: red;
+			height: 300px;
+			width: 400px;
+			color: blue;
+			margin:5%;
+			font-size: 20px;
+
+		}
+		#rule{
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+<area id="rule"></area>
+<div id="dummy-div">dummy area</div>
+<form>
+	<label>x-axis: <input type="number" name="x" id="x"></label>
+	<br>
+	<label>y-axis: <input type="number" name="y" id="y"></label>
+	<br>
+	<label>blur: <input type="number" name="blur" id="b"></label>
+	<br>
+	<label>color: <input type="color" name="color" id="c" onchange="set_color(this.value);"></label>
+	<span id="col">#000000</span>
+</form>
+<script type="text/javascript" src="js/script.js"></script>
+<section>
+	<button onclick="generate();">
+		Generate
+	</button>
+</section>
+</body>
+</html>

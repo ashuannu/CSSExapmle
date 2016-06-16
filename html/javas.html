@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation example</title>
+</head>
+<style type="text/css">
+	atinder{
+		color: red;
+	}
+</style>
+<script type="text/javascript">
+	function validate() {
+		pass1=document.querySelector("#p1").value;
+		pass2=document.querySelector("#p2").value;
+
+		if(pass1==pass2){
+			return true;
+		}else{
+			alert("password did not match");
+			return false;
+		}
+	}
+</script>
+<body>
+<form>
+	text<input type="text" name="txt" maxlength="10"><br>
+	password<input type="password" name="passwd" id="p1"><br>
+	confirm password<input type="password" name="passwd1" id="p2"><br>
+	date<atinder>*</atinder><input type="date" name="dt" required><br>
+	number<input type="number" name="num" min="18" max="62"><br>
+	color<input type="color" name="col"><br>
+	tel<input type="tel" name="tel"><br>
+	email<input type="email" name="email"><br>
+	url<input type="url" name="url"><br>
+	month<input type="month" name="mon"><br>
+	week<input type="week" name="wik"><br>
+	button<input type="button" value="button" name="btn"><br>
+	radio<input type="radio" name="rad"><br>
+	checkbox<input type="checkbox" name="chk"><br>
+	submit<input type="submit" name="sub" onclick="return validate();"><br>
+	reset<input type="reset" name="res">
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+header {
+	background-color: #ddd
+	width:100px;
+}
+
+header div{
+	float: left;
+	height: 100px;
+}
+
+.logo{
+	
+	background-color: #449290;
+	width: 25%;
+
+}
+
+.menu{
+	width: 150px;
+}

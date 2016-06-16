@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation Example</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+		}
+
+		div.anim{
+			background-color: #abc;
+			animation-name: resize_div;
+			animation-duration: 10s;
+			animation-timing-function: ease;
+			animation-iteration-count: infinite;
+		}
+		@keyframes resize_div{
+			0%{
+				width: 0px;
+				height: 0px;
+				background-color: green;
+			}
+			
+			50%{
+				width: 1366px;
+				height: 768px;
+				background-color: blue;
+			}
+
+			100%{
+				width: 0px;
+				height: 0px;
+				background-color: green;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="anim"></div>
+</body>
+</html>
